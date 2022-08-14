@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Shy Hub", "Ocean")
+local Window = Library.CreateLib("Shy Hub - Mink Piece", "Ocean")
 
 --AutoFarm
 local Autofarm = Window:NewTab("Autofarm")
