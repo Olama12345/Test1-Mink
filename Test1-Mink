@@ -1,9 +1,55 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Shy Hub - Mink Piece", "Ocean")
+local Window = Library.CreateLib("Shy Hub", "Ocean")
 
 --AutoFarm
 local Autofarm = Window:NewTab("Autofarm")
 local AutofarmSection = Autofarm:NewSection("Autofarm")
+
+
+
+
+AutofarmSection:NewButton("Sword Autofarm", "It farms Sword, go near the Immortal Monke ", function()
+    -- Sword Autofarm
+
+    while true do 
+        wait(0)
+        
+    local args = {
+        [1] = workspace:FindFirstChild("Immortal Monke"),
+        [2] = 1,
+        [3] = "Sword"
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
+    
+    local args = {
+        [1] = workspace:FindFirstChild("Immortal Monke"),
+        [2] = 2,
+        [3] = "Sword"
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
+    
+    local args = {
+        [1] = workspace:FindFirstChild("Immortal Monke"),
+        [2] = 3,
+        [3] = "Sword"
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
+    
+    local args = {
+        [1] = workspace:FindFirstChild("Immortal Monke"),
+        [2] = 4,
+        [3] = "Sword"
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
+    end
+
+end)
+
+
 
 
 AutofarmSection:NewButton("Meele Autofarm", "It farms Meele, go near the Immortal Monke ", function()
@@ -60,7 +106,7 @@ end)
 
 
 
-AutofarmSection:NewButton("Meele TP", "It teleports you to the Immortal Monke! ", function()
+AutofarmSection:NewButton("Meele/Sword TP", "It teleports you to the Immortal Monke! ", function()
 
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3489.53711, 4.00007248, 157.354691, 0.0613911971, -7.77280889e-08, 0.998113811, 8.60582983e-09, 1, 7.73456605e-08, -0.998113811, 3.84125443e-09, 0.0613911971)
 
@@ -79,75 +125,7 @@ end)
 
 AutofarmSection:NewButton("Oonel Autofarm", "It farms Oonel for you, go near him. Only with Meele", function()
 
-    while true do 
-
-        wait(0)
-        
-        local args = {
-            [1] = workspace.NPCs.Special:FindFirstChild("Oonel(Boss)"),
-            [2] = 1,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace.NPCs.Special:FindFirstChild("Oonel(Boss)"),
-            [2] = 2,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace.NPCs.Special:FindFirstChild("Oonel(Boss)"),
-            [2] = 3,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace.NPCs.Special:FindFirstChild("Oonel(Boss)"),
-            [2] = 4,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace:FindFirstChild("Oonel(Boss)"),
-            [2] = 1,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace:FindFirstChild("Oonel(Boss)"),
-            [2] = 2,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace:FindFirstChild("Oonel(Boss)"),
-            [2] = 3,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace:FindFirstChild("Oonel(Boss)"),
-            [2] = 4,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        end
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Olama12345/Oonel-Boss-Farm/main/Mink%20Piece'))()
 
 end)
 
@@ -193,75 +171,7 @@ end)
 
 AutofarmSection:NewButton("Arshort Autofarm", "It farms Arshort for you, go near him!", function()
 
-    while true do
-        
-        wait(0)
-
-    local args = {
-        [1] = workspace.NPCs.Special:FindFirstChild("Arshort(Boss)"),
-        [2] = 1,
-        [3] = "Melee"
-    }
-    
-    game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-    
-    local args = {
-        [1] = workspace.NPCs.Special:FindFirstChild("Arshort(Boss)"),
-        [2] = 2,
-        [3] = "Melee"
-    }
-    
-    game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-    
-    local args = {
-        [1] = workspace.NPCs.Special:FindFirstChild("Arshort(Boss)"),
-        [2] = 3,
-        [3] = "Melee"
-    }
-    
-    game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-    
-    local args = {
-        [1] = workspace.NPCs.Special:FindFirstChild("Arshort(Boss)"),
-        [2] = 4,
-        [3] = "Melee"
-    }
-    
-    game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-    
-    local args = {
-        [1] = workspace:FindFirstChild("Arshort(Boss)"),
-        [2] = 1,
-        [3] = "Melee"
-    }
-    
-    game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-    
-    local args = {
-        [1] = workspace:FindFirstChild("Arshort(Boss)"),
-        [2] = 2,
-        [3] = "Melee"
-    }
-    
-    game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-    
-    local args = {
-        [1] = workspace:FindFirstChild("Arshort(Boss)"),
-        [2] = 3,
-        [3] = "Melee"
-    }
-    
-    game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-    
-    local args = {
-        [1] = workspace:FindFirstChild("Arshort(Boss)"),
-        [2] = 4,
-        [3] = "Melee"
-    }
-    
-    game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-
-     end
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Olama12345/Autofarm-Boss---Monkey-King/main/Arshort%20Boss%20Mink%20Piece'))()
 
 end)
 
@@ -301,75 +211,7 @@ end)
 
 AutofarmSection:NewButton("Monkey King Autofarm", "It farms Monkey King for you, go near him!", function()
 
-    while true do
-    
-        wait(0)
-        
-    local args = {
-            [1] = workspace:FindFirstChild("Gorilla(Boss)"),
-            [2] = 1,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace:FindFirstChild("Gorilla(Boss)"),
-            [2] = 2,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace:FindFirstChild("Gorilla(Boss)"),
-            [2] = 3,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace:FindFirstChild("Gorilla(Boss)"),
-            [2] = 4,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace.NPCs.Special:FindFirstChild("Gorilla(Boss)"),
-            [2] = 1,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace.NPCs.Special:FindFirstChild("Gorilla(Boss)"),
-            [2] = 2,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace.NPCs.Special:FindFirstChild("Gorilla(Boss)"),
-            [2] = 3,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        local args = {
-            [1] = workspace.NPCs.Special:FindFirstChild("Gorilla(Boss)"),
-            [2] = 4,
-            [3] = "Melee"
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.DmgEvent:FireServer(unpack(args))
-        
-        end
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Olama12345/Monkey-King-Farm/main/Mink%20Piece'))()
 
 end)
 
@@ -427,20 +269,29 @@ end)
 
 
 MiscSection:NewButton("Get All Chests", "Gets all Chests in the game in a few seconds!!", function()
-    
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Olama12345/Teleport-.-Chest/main/Mink%20Piece'))()
-
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Olama12345/Teleport-.-Chest/main/Mink%20Piece'))()
 end)
 
-
-
-MiscSection:NewButton("Infinite Yield", "Gets Infinite Yield for you", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
 
 
 MiscSection:NewButton("Devil Fruit Dealer", "Teleports you to the Devilfruit Dealer ( 500K )", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1342.96497, 33.9675446, -1597.58887, -0.0349117145, 2.63213042e-08, 0.999390423, -5.02913089e-08, 1, -2.80941865e-08, -0.999390423, -5.1241468e-08, -0.0349117145)
+end)
+
+
+MiscSection:NewButton("Buy Random Devilfruit", "Buys you a random devilfruit without having to go anywhere ( 500K )", function()
+local args = {
+    [1] = "Buy Fruit",
+    [2] = "IGC"
+}
+
+game:GetService("ReplicatedStorage").Remotes.UIEvents:FireServer(unpack(args))
+
+end)
+
+
+MiscSection:NewButton("Infinite Yield", "Gets Infinite Yield for you", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
 
