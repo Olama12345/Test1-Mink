@@ -123,7 +123,7 @@ end)
 
  -- Oonel Autofarm
 
-AutofarmSection:NewButton("Oonel Autofarm", "It farms Oonel for you, go near him. Only with Meele", function()
+AutofarmSection:NewButton("Oonel Autofarm", "It farms Oonel for you, go near him.", function()
 
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Olama12345/Oonel-Boss-Farm/main/Mink%20Piece'))()
 
