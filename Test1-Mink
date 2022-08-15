@@ -279,20 +279,66 @@ MiscSection:NewButton("Devil Fruit Dealer", "Teleports you to the Devilfruit Dea
 end)
 
 
-MiscSection:NewButton("Buy Random Devilfruit", "Buys you a random devilfruit without having to go anywhere ( 500K )", function()
-local args = {
-    [1] = "Buy Fruit",
-    [2] = "IGC"
-}
-
-game:GetService("ReplicatedStorage").Remotes.UIEvents:FireServer(unpack(args))
-
-end)
-
-
 MiscSection:NewButton("Infinite Yield", "Gets Infinite Yield for you", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
+
+
+
+--Buyable
+local Buyable = Window:NewTab("Buyable")
+local BuyableSection = Buyable:NewSection("Buyables")
+
+BuyableSection:NewButton("Buy Random Devilfruit", "Buys you a random devilfruit without having to go anywhere ( 500K )", function()
+    local args = {
+        [1] = "Buy Fruit",
+        [2] = "IGC"
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.UIEvents:FireServer(unpack(args))
+    
+    end)
+
+BuyableSection:NewButton("Meele Juice", "Gets a Meele Juice for you ( 20K )", function()
+    local args = {
+        [1] = "BuyDrink",
+        [2] = "MeleeJuice"
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.UIEvents:FireServer(unpack(args))
+    
+end)
+
+BuyableSection:NewButton("Defense Juice", "Gets a Defense Juice for you ( 20K )", function()
+    local args = {
+        [1] = "BuyDrink",
+        [2] = "DefenseJuice"
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.UIEvents:FireServer(unpack(args))
+
+end)
+
+BuyableSection:NewButton("Sniper Juice", "Gets a Sniper Juice for you ( 20K )", function()
+    local args = {
+        [1] = "BuyDrink",
+        [2] = "SniperJuice"
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.UIEvents:FireServer(unpack(args))
+
+end)
+
+BuyableSection:NewButton("Sword Juice", "Gets a Sword Juice for you ( 20k )", function()
+    local args = {
+        [1] = "BuyDrink",
+        [2] = "SwordJuice"
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.UIEvents:FireServer(unpack(args))
+
+end)
+
 
 
 
